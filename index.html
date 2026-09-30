@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roda Gigi — Gambar Teknik 1</title>
+
+  <!-- Reveal.js dari CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
+
+  <style>
+    .reveal h1, .reveal h2, .reveal h3 { color: #2c3e50; text-transform: none; }
+    .reveal h2 { border-bottom: 3px solid #3498db; padding-bottom: 8px; }
+    .reveal h3 { color: #3498db; }
+    .reveal table { font-size: 0.7em; margin: auto; }
+    .reveal table th { background: #3498db; color: white; padding: 6px 12px; }
+    .reveal table td { padding: 5px 12px; }
+    .reveal img { max-height: 400px; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown data-separator="-----" data-separator-vertical="---">
+        <textarea data-template>
+# RODA GIGI
+
+### Gambar Teknik 1
+
+Roda Gigi Lurus (*Spur Gear*)
+
+-----
+
+## 1. Pendahuluan
+
+- Elemen mesin untuk **meneruskan & mentransmisikan** gerak dan daya
+- Antara dua poros atau lebih melalui pasangan gigi yang saling berkaitan
+- Perlu digambarkan dengan **aturan & simbol tertentu**
+- Fokus materi: **Roda Gigi Lurus (Spur Gear)**
+
+-----
+
+## 2. Fungsi Roda Gigi
+
+- Meneruskan gerak putar dari satu poros ke poros lainnya
+- Meneruskan daya dan torsi
+- Mengubah kecepatan putar
+- Mengubah torsi yang diteruskan
+- Mengubah arah putaran
+- Mengatur perbandingan putaran antara dua poros
+
+-----
+
+## 3. Jenis-Jenis Roda Gigi
+
+1. **Roda Gigi Lurus** (Spur Gear)
+2. **Roda Gigi Heliks**
+3. **Roda Gigi Kerucut** (Bevel Gear)
+4. **Roda Gigi Cacing** (Worm Gear)
+5. **Roda Gigi Rak dan Pinion**
+
+-----
+
+## Jenis Roda Gigi (1)
+
+### 3.1 Lurus (Spur Gear)
+
+Gigi **sejajar** dengan sumbu poros.
+
+Bentuk dasar untuk mempelajari geometri & penggambaran.
+
+### 3.2 Heliks
+
+Gigi membentuk **sudut** terhadap sumbu poros.
+
+-----
+
+## Jenis Roda Gigi (2)
+
+- **3.3 Kerucut (Bevel Gear)** — poros yang sumbunya *berpotongan*
+- **3.4 Cacing (Worm Gear)** — poros yang umumnya saling *tegak lurus*
+- **3.5 Rak & Pinion** — mengubah gerak *rotasi ↔ translasi*
+
+-----
+
+## 4. Istilah & Bagian Utama (1)
+
+### 4.1 Jumlah Gigi
+
+$$z$$
+
+Banyaknya gigi pada sebuah roda gigi.
+
+### 4.2 Modul
+
+$$m$$
+
+Parameter dasar ukuran gigi (satuan mm).
+
+-----
+
+## Istilah & Bagian Utama (2)
+
+### 4.3 Lingkaran Pitch
+
+Lingkaran acuan geometris antara pasangan roda gigi.
+
+$$d = mz$$
+
+-----
+
+## Istilah & Bagian Utama (3)
+
+- **4.4 Diameter Luar** — $$d_a$$ — melalui bagian terluar gigi
+- **4.5 Diameter Kaki** — $$d_f$$ — pada dasar/kaki gigi
+- **4.6 Addendum** — $$h_a$$ — tinggi kepala gigi
+- **4.7 Dedendum** — $$h_f$$ — tinggi kaki gigi
+
+-----
+
+## Istilah & Bagian Utama (4)
+
+### 4.8 Tinggi Gigi
+
+$$h = h_a + h_f$$
+
+### 4.9 Circular Pitch
+
+$$p = \pi m$$
+
+### 4.10 Sudut Tekan
+
+$$\alpha = 20^\circ$$
+
+-----
+
+## 5. Parameter Dasar Roda Gigi Lurus
+
+| Parameter | Simbol | Rumus |
+|---|---|---|
+| Modul | $$m$$ | — |
+| Jumlah Gigi | $$z$$ | — |
+| Diameter Pitch | $$d$$ | $$d = mz$$ |
+| Addendum | $$h_a$$ | $$h_a = m$$ |
+| Dedendum | $$h_f$$ | $$h_f = 1{,}25m$$ |
+
+-----
+
+## Rumus-Rumus Penting
+
+$$h = 2{,}25m$$
+
+$$d_a = d + 2m = m(z+2)$$
+
+$$d_f = d - 2(1{,}25m) = m(z-2{,}5)$$
+
+$$p = \pi m$$
+
+-----
+
+## 6. Contoh Perhitungan
+
+### Data Roda Gigi
+
+| Parameter | Nilai |
+|---|---|
+| Modul, $$m$$ | 2 mm |
+| Jumlah gigi, $$z$$ | 30 |
+| Sudut tekan, $$\alpha$$ | $$20^\circ$$ |
+
+-----
+
+## Perhitungan (1)
+
+**Diameter Pitch**
+
+$$d = mz = 2(30) = 60\text{ mm}$$
+
+**Addendum**
+
+$$h_a = m = 2\text{ mm}$$
+
+**Dedendum**
+
+$$h_f = 1{,}25m = 1{,}25(2) = 2{,}5\text{ mm}$$
+
+-----
+
+## Perhitungan (2)
+
+**Tinggi Total Gigi**
+
+$$h = h_a + h_f = 2 + 2{,}5 = 4{,}5\text{ mm}$$
+
+**Diameter Luar**
+
+$$d_a = m(z+2) = 2(32) = 64\text{ mm}$$
+
+**Diameter Kaki**
+
+$$d_f = m(z-2{,}5) = 2(27{,}5) = 55\text{ mm}$$
+
+-----
+
+## Perhitungan (3)
+
+**Circular Pitch**
+
+$$p = \pi m = \pi(2) \approx 6{,}283\text{ mm}$$
+
+-----
+
+## Hasil Perhitungan
+
+| Parameter | Simbol | Hasil |
+|---|---|---|
+| Modul | $$m$$ | 2 mm |
+| Jumlah gigi | $$z$$ | 30 |
+| Sudut tekan | $$\alpha$$ | $$20^\circ$$ |
+| Diameter pitch | $$d$$ | 60 mm |
+| Addendum | $$h_a$$ | 2 mm |
+| Dedendum | $$h_f$$ | 2,5 mm |
+| Tinggi total | $$h$$ | 4,5 mm |
+| Diameter luar | $$d_a$$ | 64 mm |
+| Diameter kaki | $$d_f$$ | 55 mm |
+| Circular pitch | $$p$$ | 6,283 mm |
+
+-----
+
+## 7. Konvensi Penggambaran
+
+Roda gigi tidak selalu digambar seluruh profil giginya.
+
+Digunakan **representasi konvensional** sesuai **ISO 2203**.
+
+Tujuan: menunjukkan informasi geometris penting tanpa membuat gambar terlalu kompleks.
+
+-----
+
+## Lingkaran-Lingkaran Utama
+
+- **7.1 Lingkaran Luar** — $$d_a$$ — batas terluar gigi
+- **7.2 Lingkaran Pitch** — $$d$$ — acuan utama geometri
+- **7.3 Lingkaran Kaki** — $$d_f$$ — batas dasar gigi
+- **7.4 Sumbu** — pusat rotasi
+
+-----
+
+## Tampak Depan & Samping
+
+### 7.6 Tampak Depan
+
+- Lingkaran luar
+- Lingkaran pitch
+- Lingkaran kaki
+- Sumbu / garis pusat
+
+### 7.7 Tampak Samping
+
+- Lebar roda gigi
+- Diameter lubang / bore
+- Keyway
+- Bentuk hub
+
+-----
+
+## Gambar Detail & Rakitan
+
+### 7.8 Gambar Detail
+
+Modul, jumlah gigi, sudut tekan, lebar, lubang, keyway, material, toleransi, kekasaran permukaan.
+
+### 7.9 Gambar Rakitan
+
+Jarak antar sumbu dua roda gigi luar:
+
+$$a = \frac{d_1 + d_2}{2}$$
+
+-----
+
+## 7.10 Prinsip Penyederhanaan
+
+**Geometri Sebenarnya** — bentuk fisik gigi yang sesungguhnya
+
+**Representasi Konvensional** — cara roda gigi ditampilkan pada gambar teknik
+
+**Inti:** Gambar teknik roda gigi ≠ gambar profil gigi nyata.
+
+-----
+
+## 8. Langkah Penggambaran (1)
+
+### Data Latihan
+
+| Parameter | Nilai |
+|---|---|
+| $$m$$ | 2 mm |
+| $$z$$ | 30 |
+| $$\alpha$$ | $$20^\circ$$ |
+| $$d$$ | 60 mm |
+| $$d_a$$ | 64 mm |
+| $$d_f$$ | 55 mm |
+
+-----
+
+## 8.4 Menentukan Pembagian Gigi
+
+Sudut pembagian setiap gigi:
+
+$$\theta = \frac{360^\circ}{z}$$
+
+$$\theta = \frac{360^\circ}{30} = 12^\circ$$
+
+Posisi setiap gigi berjarak 12° satu sama lain.
+
+-----
+
+## 8.6–8.7 Profil & Lubang Poros
+
+### Profil Gigi
+
+Menggunakan profil **involute** — dibuat dengan konstruksi geometris atau CAD.
+
+### Lubang Poros (Bore)
+
+Diameter sesuai kebutuhan poros. Jika ada **keyway**, tampilkan sesuai standar.
+
+-----
+
+## 8.11 Urutan Penggambaran
+
+1. Tentukan data roda gigi
+2. Hitung parameter geometris
+3. Gambar sumbu & pusat
+4. Gambar lingkaran luar
+5. Gambar lingkaran pitch
+6. Gambar lingkaran kaki
+7. Bagi lingkaran sesuai jumlah gigi
+8. Konstruksi profil gigi
+9. Gambar lubang poros & keyway
+10. Gambar tampak samping
+11. Tambahkan dimensi & info teknis
+12. Periksa kesesuaian gambar
+
+-----
+
+# Terima Kasih
+
+Roda Gigi Lurus — Gambar Teknik 1
+        </textarea>
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      width: 1100,
+      height: 700,
+      margin: 0.05,
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+        config: 'TeX-AMS_HTML-full'
+      },
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3]
+    });
+  </script>
+</body>
+</html>
