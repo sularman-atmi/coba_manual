@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Jenis Slide — Reveal.js</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/theme/white.css">
+
+  <style>
+    /* ============================================
+       CUSTOM STYLE
+       ============================================ */
+    .reveal h1, .reveal h2, .reveal h3 { color: #2c3e50; text-transform: none; }
+    .reveal h2 { border-bottom: 3px solid #3498db; padding-bottom: 8px; }
+    .reveal h3 { color: #3498db; }
+    .reveal table { font-size: 0.7em; margin: auto; }
+    .reveal table th { background: #3498db; color: white; padding: 6px 12px; }
+    .reveal table td { padding: 5px 12px; }
+    .reveal img { max-height: 400px; }
+
+    /* Dua kolom */
+    .dua-kolom { display: flex; gap: 30px; align-items: flex-start; }
+    .dua-kolom > div { flex: 1; }
+
+    /* Kotak info */
+    .kotak-info {
+      background: #eef5fb;
+      border-left: 5px solid #3498db;
+      padding: 15px 20px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      text-align: left;
+    }
+
+    /* Kotak peringatan */
+    .kotak-peringatan {
+      background: #fff8e1;
+      border-left: 5px solid #f39c12;
+      padding: 15px 20px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      text-align: left;
+    }
+
+    /* Rumus */
+    .rumus {
+      background: #f4f4f4;
+      padding: 12px 20px;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+
+    /* Highlight teks */
+    .highlight { color: #e74c3c; font-weight: bold; }
+    .biru { color: #3498db; }
+    .hijau { color: #27ae60; }
+
+    /* Gambar + caption */
+    .gambar-container { text-align: center; }
+    .caption {
+      font-size: 0.6em;
+      color: #666;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    /* Quote */
+    .reveal blockquote {
+      background: #f9f9f9;
+      border-left: 5px solid #3498db;
+      padding: 20px;
+      font-style: italic;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ============================================
+           JENIS 1: SLIDE JUDUL (TITLE)
+           ============================================
+           Cara: <section> dengan <h1> dan <h3>
+      -->
+      <section>
+        <h1>JENIS-JENIS SLIDE</h1>
+        <h3>Panduan Penulisan Reveal.js</h3>
+        <p><small>Dengan Markdown & HTML</small></p>
+        <p style="margin-top:60px; font-size:0.5em; color:#888;">
+          Tekan <strong>→</strong> atau <strong>Space</strong> untuk lanjut
+        </p>
+      </section>
+
+      <!-- ============================================
+           JENIS 2: SLIDE TEKS SEDERHANA
+           ============================================
+           Cara: Judul H2 + paragraf biasa
+      -->
+      <section>
+        <h2>1. Slide Teks Sederhana</h2>
+        <p>Ini contoh slide dengan teks paragraf biasa.</p>
+        <p>Kamu bisa menulis beberapa paragraf di sini. Teks akan otomatis <strong>wrap</strong> mengikuti lebar slide.</p>
+        <p>Gunakan <span class="highlight">highlight</span> untuk kata penting, atau <em>italic</em> untuk penekanan.</p>
+      </section>
+
+      <!-- ============================================
+           JENIS 3: SLIDE POIN-POIN (BULLET)
+           ============================================
+           Cara: <ul> untuk bullet, <ol> untuk nomor
+      -->
+      <section>
+        <h2>2. Slide Poin-Poin</h2>
+        <p><strong>Unordered list (bullet):</strong></p>
+        <ul>
+          <li>Poin pertama</li>
+          <li>Poin kedua</li>
+          <li>Poin ketiga dengan <span class="highlight">highlight</span></li>
+        </ul>
+        <p><strong>Ordered list (nomor):</strong></p>
+        <ol>
+          <li>Langkah pertama</li>
+          <li>Langkah kedua</li>
+          <li>Langkah ketiga</li>
+        </ol>
+      </section>
+
+      <!-- ============================================
+           JENIS 4: SLIDE DENGAN GAMBAR
+           ============================================
+           Cara: <img src="URL-atau-path"> untuk gambar
+           Kalau gambar lokal: <img src="assets/images/nama.png">
+      -->
+      <section>
+        <h2>3. Slide dengan Gambar</h2>
+        <div class="gambar-container">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gear_1.jpg/320px-Gear_1.jpg"
+               alt="Contoh gambar roda gigi">
+          <p class="caption">Gambar 1. Contoh ilustrasi roda gigi</p>
+        </div>
+      </section>
+
+      <!-- ============================================
+           JENIS 5: SLIDE DENGAN TABEL
+           ============================================
+           Cara: <table> dengan <thead> dan <tbody>
+      -->
+      <section>
+        <h2>4. Slide dengan Tabel</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Simbol</th>
+              <th>Nilai</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Modul</td><td>m</td><td>2 mm</td></tr>
+            <tr><td>Jumlah gigi</td><td>z</td><td>30</td></tr>
+            <tr><td>Diameter pitch</td><td>d</td><td>60 mm</td></tr>
+            <tr><td>Diameter luar</td><td>da</td><td>64 mm</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ============================================
+           JENIS 6: SLIDE DUA KOLOM
+           ============================================
+           Cara: <div class="dua-kolom"> dengan 2 <div> di dalamnya
+      -->
+      <section>
+        <h2>5. Slide Dua Kolom</h2>
+        <div class="dua-kolom">
+          <div>
+            <h3>Kolom Kiri</h3>
+            <p>Konten di kolom kiri.</p>
+            <ul>
+              <li>Poin A</li>
+              <li>Poin B</li>
+              <li>Poin C</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Kolom Kanan</h3>
+            <p>Konten di kolom kanan.</p>
+            <ul>
+              <li>Poin X</li>
+              <li>Poin Y</li>
+              <li>Poin Z</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           JENIS 7: SLIDE DENGAN GAMBAR + TEKS (2 KOLOM)
+           ============================================
+           Cara: Kombinasi .dua-kolom dengan <img> dan <p>
+      -->
+      <section>
+        <h2>6. Gambar + Teks (2 Kolom)</h2>
+        <div class="dua-kolom">
+          <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Gear_1.jpg/240px-Gear_1.jpg"
+                 alt="Roda gigi">
+          </div>
+          <div>
+            <h3>Penjelasan</h3>
+            <p>Gambar di kiri menunjukkan roda gigi.</p>
+            <p>Penjelasan detail ada di kanan.</p>
+            <p>Pola ini cocok untuk <strong>menjelaskan visual</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================
+           JENIS 8: SLIDE DENGAN RUMUS MATEMATIKA
+           ============================================
+           Cara: $$...$$ untuk rumus inline atau block
+           Butuh plugin MathJax (sudah di-load di bawah)
+      -->
+      <section>
+        <h2>7. Slide dengan Rumus</h2>
+        <p><strong>Rumus inline:</strong> diameter pitch adalah $d = mz$</p>
+
+        <p><strong>Rumus block:</strong></p>
+        <div class="rumus">
+          $$d_a = d + 2m = m(z + 2)$$
+        </div>
+
+        <p><strong>Rumus kompleks:</strong></p>
+        <div class="rumus">
+          $$a = \frac{d_1 + d_2}{2}$$
+        </div>
+      </section>
+
+      <!-- ============================================
+           JENIS 9: SLIDE DENGAN KUTIPAN (BLOCKQUOTE)
+           ============================================
+           Cara: <blockquote> untuk kutipan
+      -->
+      <section>
+        <h2>8. Slide dengan Kutipan</h2>
+        <blockquote>
+          "Pendidikan adalah senjata paling ampuh untuk mengubah dunia."
+          <br>— <strong>Nelson Mandela</strong>
+        </blockquote>
+      </section>
+
+      <!-- ============================================
+           JENIS 10: SLIDE DENGAN KODE
+           ============================================
+           Cara: <pre><code> untuk kode program
+      -->
+      <section>
+        <h2>9. Slide dengan Kode</h2>
+        <p>Contoh kode Python:</p>
+        <pre><code data-trim>
+def hitung_diameter_pitch(m, z):
+    """Hitung diameter pitch roda gigi."""
+    return m * z
+
+# Contoh penggunaan
+d = hitung_diameter_pitch(2, 30)
+print(f"Diameter pitch: {d} mm")
+        </code></pre>
+      </section>
+
+      <!-- ============================================
+           JENIS 11: SLIDE DENGAN KOTAK INFO
+           ============================================
+           Cara: <div class="kotak-info"> atau .kotak-peringatan
+      -->
+      <section>
+        <h2>10. Slide dengan Kotak Info</h2>
+        <div class="kotak-info">
+          <strong>💡 Info:</strong> Ini kotak informasi biru. Cocok untuk tips atau catatan penting.
+        </div>
+        <div class="kotak-peringatan">
+          <strong>⚠️ Peringatan:</strong> Ini kotak peringatan kuning. Cocok untuk hal yang perlu diperhatikan.
+        </div>
+      </section>
+
+      <!-- ============================================
+           JENIS 12: SLIDE DENGAN ANIMASI FRAGMENT
+           ============================================
+           Cara: tambahkan class="fragment" ke elemen
+           Elemen akan muncul satu per satu saat klik
+      -->
+      <section>
+        <h2>11. Slide dengan Animasi Fragment</h2>
+        <p>Klik untuk memunculkan poin satu per satu:</p>
+        <ul>
+          <li class="fragment">Poin pertama muncul</li>
+          <li class="fragment">Poin kedua muncul</li>
+          <li class="fragment">Poin ketiga muncul</li>
+          <li class="fragment">Poin keempat muncul</li>
+        </ul>
+        <p class="fragment highlight-red">Teks ini jadi merah saat muncul</p>
+        <p class="fragment highlight-blue">Teks ini jadi biru saat muncul</p>
+      </section>
+
+      <!-- ============================================
+           JENIS 13: SLIDE DENGAN SUB-SLIDE VERTIKAL
+           ============================================
+           Cara: pakai --- (3 strip) di dalam section
+           Navigasi: tekan ↓ untuk turun ke sub-slide
+      -->
+      <section>
+        <section>
+          <h2>12. Slide dengan Sub-Slide Vertikal</h2>
+          <p>Ini slide utama.</p>
+          <p>Tekan <strong>↓</strong> untuk ke sub-slide.</p>
+        </section>
+        <section>
+          <h3>Sub-Slide 1</h3>
+          <p>Ini sub-slide pertama (vertikal).</p>
+        </section>
+        <section>
+          <h3>Sub-Slide 2</h3>
+          <p>Ini sub-slide kedua (vertikal).</p>
+        </section>
+      </section>
+
+      <!-- ============================================
+           JENIS 14: SLIDE DENGAN SPEAKER NOTES
+           ============================================
+           Cara: <aside class="notes">...</aside>
+           Notes tidak tampil di slide, tapi muncul di jendela speaker (tombol S)
+      -->
+      <section>
+        <h2>13. Slide dengan Speaker Notes</h2>
+        <p>Slide ini punya catatan untuk pembicara.</p>
+        <p>Tekan <strong>S</strong> untuk membuka jendela notes.</p>
+        <aside class="notes">
+          Ini speaker notes. Hanya terlihat oleh pembicara.
+          Gunakan untuk mengingatkan diri sendiri poin yang mau disampaikan.
+        </aside>
+      </section>
+
+      <!-- ============================================
+           JENIS 15: SLIDE PENUTUP
+           ============================================
+      -->
+      <section>
+        <h1>Terima Kasih</h1>
+        <h3>Ada Pertanyaan?</h3>
+        <p style="margin-top:60px; font-size:0.6em; color:#888;">
+          Materi bacaan lengkap:<br>
+          <a href="https://sularman-atmi.github.io/gambar-teknik-1/roda-gigi/">
+            sularman-atmi.github.io/gambar-teknik-1/roda-gigi/
+          </a>
+        </p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ============================================
+       SCRIPT REVEAL.JS
+       ============================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/notes/notes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/plugin/math/math.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      width: 1100,
+      height: 700,
+      margin: 0.05,
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+        config: 'TeX-AMS_HTML-full'
+      },
+      plugins: [RevealHighlight, RevealNotes, RevealMath.MathJax3]
+    });
+  </script>
+</body>
+</html>
